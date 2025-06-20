@@ -1,0 +1,172 @@
+body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9fafb;
+            color: #333;
+        }
+        .auth-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+        }
+        .auth-card {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+        }
+        .auth-logo {
+            margin-bottom: 1.5rem;
+            color: #4f46e5; /* фіолетовий */
+        }
+        .auth-logo i {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .auth-logo h1 {
+            margin: 0;
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: #4f46e5;
+        }
+        .auth-title {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            color: #1f2937;
+        }
+        .auth-subtitle {
+            color: #6b7280;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #374151;
+        }
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1.5px solid #d1d5db;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            outline: none;
+            border-color: #4f46e5;
+            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+        }
+        input[type="checkbox"] {
+            margin-right: 8px;
+            width: 18px;
+            height: 18px;
+            vertical-align: middle;
+        }
+        .btn-auth {
+            background-color: #4f46e5;
+            border: none;
+            color: white;
+            padding: 14px 0;
+            width: 100%;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-auth:hover {
+            background-color: #4338ca;
+        }
+        .auth-links {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #4b5563;
+        }
+        .auth-links a {
+            color: #4f46e5;
+            font-weight: 600;
+            text-decoration: none;
+            transition: text-decoration 0.3s;
+        }
+        .auth-links a:hover {
+            text-decoration: underline;
+        }
+        .divider {
+            margin: 2rem 0;
+            position: relative;
+            text-align: center;
+            color: #9ca3af;
+            font-size: 0.9rem;
+        }
+        .divider::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            border-top: 1px solid #d1d5db;
+            transform: translateY(-50%);
+            z-index: 0;
+        }
+        .divider span {
+            background: #fff;
+            padding: 0 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        .btn-secondary {
+            background-color: #e0e7ff;
+            color: #4f46e5;
+            border-radius: 12px;
+            padding: 12px 0;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border: none;
+            width: 100%;
+            text-decoration: none;
+        }
+        .btn-secondary:hover {
+            background-color: #c7d2fe;
+        }
+        .error-message,
+        .success-message {
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: none;
+            text-align: left;
+        }
+        .error-message {
+            background-color: #fee2e2;
+            color: #b91c1c;
+        }
+        .success-message {
+            background-color: #dcfce7;
+            color: #15803d;
+        }
